@@ -4,10 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" />
+    <link href="./style.css" rel="stylesheet" />
     <title>코딩네컷</title>
   </head>
   <body>
-    <!-- 여기에 주요 코드가 들어갈거에요! -->
+    <div class="container">
+      <div class="container__photos">
+        <div
+          class="container__photoFrame container__photoFrame--image1"
+          onmouseover="hideText(1)"
+          onmouseout="showText(1)"
+          onclick="alertText(1)"
+        >
+          <span class="container__description container__description--desc1">
+            찰칵📷
+          </span>
+        </div>
+        <div
+          class="container__photoFrame container__photoFrame--image2"
+          onmouseover="hideText(2)"
+          onmouseout="showText(2)"
+          onclick="alertText(2)"
+        >
+          <span class="container__description container__description--desc2">
+            짜잔~
+          </span>
+        </div>
+        <div
+          class="container__photoFrame container__photoFrame--image3"
+          onmouseover="hideText(3)"
+          onmouseout="showText(3)"
+          onclick="alertText(3)"
+        >
+          <span class="container__description container__description--desc3">
+            사랑해😍
+          </span>
+        </div>
+        <div class="container__photoFrame">
+          <iframe
+            class="container__video"
+            src="https://www.youtube.com/embed/jSGRhBw2nh0"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer__title">Happy Lunch Time</p>
+        <p class="footer__date">2023.02.16</p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
